@@ -1,6 +1,5 @@
-
+import MealItemFrom from './MealItemFrom';
 import classes from './MealItem.module.css';
-
 const MealItem = props => {
    // eslint-disable-next-line no-unused-vars
    const price = `$${props.price.toFixed(2)}`;
@@ -13,7 +12,9 @@ const MealItem = props => {
         <div>{price}</div>
 
         </div>
-        <div></div>
+        <div>
+            <MealItemFrom />
+        </div>
     </li>
     )
     
